@@ -1,0 +1,144 @@
+/* Custom Stylesheet */
+/**
+ * overide materialize styles
+ * 
+ */
+ .header,.main,.head,.small,.med,.big{
+   font-family: 'Raleway',sans-serif !important;
+ }
+ .head {
+   font-size: x-large;
+   font-weight: 600;
+   color: navy;
+ }
+ .header {
+  font-weight: 600;
+  color: white;
+}
+ .med{
+   font-size: large;
+   font-weight: 500;
+   color:mediumslateblue;
+ }
+ .big{
+   font-family: 'Raleway',sans-serif;
+   font-size: xx-large;
+   color: indigo;
+   font-weight: 700;
+ }
+ .small{
+  font-size: medium;
+  font-weight: 700;
+  color: midnightblue;
+}
+ .para{
+   font-size: medium;
+   font-weight: 400;
+   color: grey;
+ }
+ .paral{
+  font-size: large;
+  font-weight: 400;
+  color: lightgrey;
+}
+
+ .parallax-container {
+   min-height: 600px !important;
+   height: auto !important;
+ }
+ .containerx{
+     width:90%;
+     margin: 0 auto;
+ }
+   .parallax-container .section {
+     width: 100%;
+   }
+ 
+ @media only screen and (max-width : 992px) {
+    .parallax-container {
+        min-height: 700px !important;
+        height: auto !important;
+      }
+    .parallax-container .section {
+     position: absolute;
+   }
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ @media only screen and (max-width : 600px) {
+   #index-banner .section {
+     top: 10%;
+   }
+ }
+ 
+ .icon-block {
+   padding: 0 0px;
+ }
+ .icon-block .material-icons {
+   font-size: inherit;
+ }
+ 
+ footer.page-footer {
+   margin: 0;
+ }
+
+.calculate{height:300px;}
+
+ .icons{padding: 50px;}
+
+ .iconx{padding: 100px;}
+
+ .experts{
+  max-height:390px !important;
+  overflow:hidden !important;
+  padding-top:25px !important;
+  background-color: whitesmoke !important;
+}
+.experts img {
+  max-height:370px !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+}
+.pad-top{padding-top: 30px;}
+
+.reviews{padding:5% 0;}
+
+.pad{padding:2% 0;}
+
+p{font-family: 'Raleway',sans-serif;font-weight: 400;}
+
+.numbers{font-family: 'lato',sans-serif;font-weight: 900;color: aquamarine;}
+
+.caption{font-weight: 900;font-size: x-large;}
+
+.picons{
+  max-height: 22px;
+  max-width:27px;
+  background-color: white !important;
+  font-size: 20px;
+  border-radius: 0.4rem;
+  margin-right: 5px;
+  cursor: pointer;
+  border:none;
+  outline:none;
+}
+.ficons{
+  max-height: 28px;
+  max-width:28px;
+  background-color:white !important;
+  font-size: 28px;
+  border-radius: 1rem;
+  margin-right: 5px;
+  cursor: pointer;
+  border:none;
+  outline:none;
+}
+.page-footer{
+  background-color:navy;
+}
+.log-nav{
+  background-color:rgba(70, 90, 110, 1);
+}
+.btn,.btn-large{background-color:transparent;border-radius:2rem;border:1px solid white;}

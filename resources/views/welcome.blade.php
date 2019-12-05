@@ -1,176 +1,152 @@
 @extends('layouts.app')
-@include('partials.navbar')
 @section('content')
-                  <div id="index-banner" class="parallax-container">
-                    <div class="section no-pad-bot">
-                      <div class="container">
-                        <br><br>
-                        <h1 class="header center white-text text-lighten-1 light">Grow<span class="yellow-text">Up</span></h1>
-                        <div class="row center">
-                          <h6 class="header col s12 white-text">Like the Internet, Bitcoin will change the way people interact
-                               and do business around the world. <br> <span class="teal-text text-lighten-3">Erik Voorhees</span> <br>MAKE YOUR MONEY GROW</h6>
-                        </div>
-                        <div class="row center">
-                          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                        </div>
-                        <br><br>
-                
-                      </div>
-                    </div>
-                    <div class="parallax"><img src="{{ asset('images/background4.jpg') }}" alt="Unsplashed background img 1"></div>
-                  </div>
-                
-                
-                  <div class="">
-                    <div class="section">
-                
-                      <!--   Icon Section   -->
-                      <div class="row">
-                        <div class="col s12 m3">
-                          <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                            <h5 class="center">Speeds up development</h5>
-                
-                            <p class="light">We did most of the heavy lifting for you 
-                                to provide a default stylings that incorporate our custom 
-                                components. Additionally, we refined animations and transitions
-                                 to provide a smoother experience for developers.</p>
-                          </div>
-                        </div>
-                
-                        <div class="col s12 m3">
-                          <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                            <h5 class="center">User Experience Focused</h5>
-                
-                            <p class="light">By utilizing elements and principles of Material Design,
-                                 we were able to create a framework that incorporates components
-                                  and animations that provide more feedback to users.
-                                 Additionally, a single underlying responsive system across
-                                  all platforms allow for a more unified user experience.</p>
-                          </div>
-                        </div>
-                
-                        <div class="col s12 m3">
-                          <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                            <h5 class="center">Easy to work with</h5>
-                
-                            <p class="light">We have provided detailed documentation as well
-                                as specific code examples to help new users get started. We 
-                                are also always open to feedback and can answer any questions
-                                 a user may have about Materialize.</p>
-                          </div>
-                        </div>
 
-                        <div class="col s12 m3">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><i class="material-icons">attach_money</i></h2>
-                            <h5 class="center">Let your money work for you</h5>
-                
-                            <p class="light">We have provided detailed documentation as well
-                                as specific code examples to help new users get started. We 
-                                are also always open to feedback and can answer any questions
-                                a user may have about Materialize.</p>
-                        </div>
-                        </div>
-                      </div>
-                
-                    </div>
-                  </div>
-                
-                
-                  <div class="parallax-container valign-wrapper">
-                    <div class="section no-pad-bot">
-                      <div class="container">
-                        <div class="row center">
-                          <h5 class="header col s12 white-text light">A modern
-                               responsive front-end framework based on Material Design</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="parallax"><img src="{{ asset('images/background1.jpg') }}"></div>
-                  </div>
-                
-                  <div class="container">
-                    <div class="section">
-                
-                      <div class="row">
-                        <div class="col s12 center">
-                          <h3><i class="mdi-content-send brown-text"></i></h3>
-                          <h4>Contact Us</h4>
-                          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                        </div>
-                      </div>
-                
-                    </div>
-                  </div>
-                  <!--
-                    <span>Currency:</span>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8">
-                    <select id='yration' class="slct_home" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-                    <option value='1'>Ethereum</option >
-                    <option value='1.5'>BITCOIN</option >
-                    <option value='2'>S&P 500</option >
-                    <option value='1.3'>Our megaplan</option >
-                    </select>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="item">
-                    <div class="col-lg-5 col-md-5 col-sm-5">
-                    <span>How much money:</span>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7">
-                    <input id="howmuchmoney" type="text">
-                    </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="item">
-                    <div class="col-lg-5 col-md-5 col-sm-5">
-                    <span>Increment rate:</span>
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7">
-                    <input id="increment" type="text">
-                    </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                    <button onclick='calculate();return false'>Calculate now</button>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                  -->
-                
-                  <div class="parallax-container valign-wrapper">
-                    <div class="section no-pad-bot">
-                      <div class="container">
-                        <div class="row center">
-                          <h5 class="header col s12 white-text light">I think Bitcoin really feels empowering in a sense.
-                              </h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="parallax"><img src="{{ asset('images/background2.jpg') }}" alt="Unsplashed background img 3"></div>
-                  </div>
-@include('partials.footer')
+
+<section class="parallax-container" style="background:url({{ asset('images/background4.jpg')}}) fixed" data-speed="6" data-type="background">
+  
+  <!--navbar section -->
+<header class="containerx" style="border:none;outline:none;padding:2% 0;border-bottom:1px solid lightgrey">
+  <nav role="navigation" class="lighten-2" style="background-color:transparent;outline:none;border:none;">
+    <div class="containerx">
+      <div class="nav-wrapper">
+          <a href="/" class="left brand-logo"><img src="{{ asset('images/logo.png') }}" alt="logo"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+                <!--navbar dropdown--> 
+              <a href="#" class="dropdown-trigger blue-text small" data-target="dropdown1">HOME PAGE<i class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <li>
+              <a href="{{ route('page') }}" class="blue-text small">PAGE</a>
+            </li>
+            <li>
+              <a href="{{ route('team') }}" class="blue-text small">TEAM</a>
+            </li>
+            <li>
+              <a href="{{ route('portfolio') }}" class="blue-text small">PORTFOLIO</a>
+            </li>
+            <li>
+              <a href="{{ route('blog') }}" class="blue-text small">BLOG</a>
+            </li>
+            @guest 
+            <li> 
+              <a
+                href="{{ route('login') }}" class="blue-text small">{{ __('LOGIN') }}
+              </a> 
+            </li>
+            <li>
+              @if (Route::has('register')) 
+              <a 
+                  href="{{ route('register') }}" class="blue-text small">{{ __('REGISTER') }}
+              </a> 
+              @endif
+            </li>
+              @else
+              <!--this should reveal  a dropdown menu for the user to logout-->
+              <li>
+                <a role="button" class='dropdown-trigger btn' class="blue-text small" 
+                      href='#' data-target='logout_btn'
+                      aria-haspopup="true" 
+                      aria-expanded="false" v-pre> 
+                      {{ Auth::user()->name }}
+                </a>
+                //this should be the dropdown menu for logout
+                <div id='logout_btn class='dropdown-content' >
+                    <a  href="{{ route('logout') }}"   class="blue-text small" 
+                      onclick="event.preventDefault();    
+                       document.getElementById('logout.form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" 
+                      method="POST" style="display: none;"> 
+                                @csrf 
+                      </form>
+                  </div> 
+                </li>
+              @endguest 
+          </ul>            
         </div>
-@endsection
-<!--<script>
-    function calculate() {
-      var howmuchmoney = $("#howmuchmoney").val();
-      var increment = $("#increment").val().replace(/m|p|o/i,'').replace(/m|p|o/i,'').replace(/m|p|o/i,'')/12;
-      var ration = $("#yration").val();
+      </div>
+    </nav>
+          
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="#">Home Page</a></li>
+          <li><a href="{{ route('page') }}">Page</a></li>
+          <li><a href="{{ route('team') }}">Team</a></li>
+          <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+          <li><a href="{{ route('blog') }}">Blog</a></li>
+        </ul>
+        <ul class="dropdown-content" id="dropdown1">
+          <li><a href="/">MAIN FINANCE</a></li>
+          <li><a href="{{ route('chart') }}">MAIN CHART</a></li>
+          <li><a href="{{ route('escrow') }}">ESCROW</a></li>
+          <li><a href="{{ route('broker') }}">BROKER</a></li>
+          <li><a href="{{ route('law-firm') }}">LAW FIRM</a></li>
+          <li><a href="{{ route('lawyer') }}">PRIVATE LAWYER</a></li>
+        </ul>
+</header>
+
+  <div class="valign-wrapper container" style="padding-top:4%;padding-bottom:1%;">
+    <div class="row">
+      <br><br><br>
+      <div class="col center s12 white-text">
       
-      profit = howmuchmoney*increment*ration-howmuchmoney*-1;
-      $("#profit1").html("$"+profit);
-      $("#fees").html("-$"+profit/10);
-      $("#total").html("$"+(profit-profit/10));
-    }
-    </script>
-  -->
+      <p class="center small white-text">TRUST YOUR SUCCESS WITH PROFESSIONALS</span></p> 
+          <h1 class="header center">WE MAKE YOUR MONEY GROW</h1>
+          
+          <p class="center containerx hide-on-small-only">One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you, who know you're dedicated, smart, a team player.</p>
+          <br><br>
+      </div>
+          <div class="row center">
+            <a href="#" id="download-button" class="btn waves-effect waves-light teal lighten-1">BUY NOW!</a>  
+            <a href="#" id="download-button" class="btn waves-effect waves-light teal lighten-1">REVIEWS</a>
+          </div>
+      </div>
+  </div>
+</section>
+     <br><br><br>             
+  <!--   Icon Section   -->
+  @include('partials.icon')
+  
+  <!--services section-->
+  @include('partials.services')
+
+  <!-- credibility section-->
+  @include('partials.credibility')
+
+  <!--projects section-->
+  @include('partials.projects')
+  
+  <!--offers section-->
+  @include('partials.offers')
+
+  <!--experts section-->
+  @include('partials.experts')
+  
+  <!--Profit calculator-->
+  @include('partials.profit_calc')
+ 
+  <!--We render our graph here -->
+
+  <!--We render our blog post in this section-->
+  @include('partials.blog-post')
+
+  <!-- Contact section-->
+  @include('partials.contact')
+
+  <!--We render our reviews in this section-->
+  @include('partials.reviews')      
+
+  <!--We render our skills in this section -->
+  @include('partials.skills')
+
+  <!--we render map here-->
+
+  <!--Clients section-->
+  @include('partials.clients')
+
+  <!--add the footer view at the bottom of this page-->
+  @include('partials.footer')
+
+@endsection
+          

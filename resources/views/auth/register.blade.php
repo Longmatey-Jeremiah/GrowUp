@@ -2,7 +2,7 @@
 
 @section('content')
         <div class="row">
-            <img class="col l9 valign-wrapper hide-on-med-and-down" src="{{ asset('images/background4.jpg') }}">    
+            <img class="col l9 hide-on-med-and-down" style="height:99vh" src="{{ asset('images/background4.jpg') }}">    
         <div class="col s12 m8 push-m2 l3">
           <div><h4 class="center" style="margin-top:40px;">Grow<span class="teal-text">Up</span></h4></div>
             <div class="row">
@@ -57,14 +57,14 @@
                     </div>
 
 
-                    <div class=" row">
+                   <!-- <div class=" row">
                             
                         <div class="input-field col s10 push-s1">
                             <input id="password-confirm" type="text" name="password_confirmation" required>
                             <label for="password-confirm"> Confirm Password </label>
                         </div>
 
-                    </div>
+                    </div>-->
                 </div>
                     <div class='row'>
                         <div class="col s4 push-s4">
@@ -77,4 +77,9 @@
                 </div>
         </div>
     </div>
+    <style>
+        img{
+            
+        }
+    </style>
 @endsection

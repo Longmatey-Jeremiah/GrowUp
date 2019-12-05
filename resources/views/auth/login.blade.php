@@ -50,23 +50,24 @@
                         <div class="row">
                             <div class="col s6 push-s1 m6 offset-m2">
                                 <div class="form-check">
-                                    <input class="" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                    
-                                    <label for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
+                                    <p>
+                                            <label>
+                                              <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} />
+                                              <span>{{ __('Remember Me') }}</span>
+                                            </label>
+                                          </p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row center">
                             <div class="col s9 push-s2 l12">
-                                <button type="submit" class="btn col push-s1">
+                                <button type="submit" class="btn-small col push-s1">
                                     {{ __('Login') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn col push-s1" style="margin-left:4px;" href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}
+                                    <a class="btn-small col push-s1" style="margin-left:4px;" href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
                             </div>
