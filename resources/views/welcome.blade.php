@@ -2,7 +2,7 @@
 @section('content')
 
 
-<section class="parallax-container" style="background:url({{ asset('images/background4.jpg')}}) fixed" data-speed="6" data-type="background">
+<section class="vh" style="background:url({{ asset('images/bitcoin/welcome-bg.jpg')}}) fixed" data-speed="6" data-type="background">
   
   <!--navbar section -->
 <header class="containerx" style="border:none;outline:none;padding:2% 0;border-bottom:1px solid lightgrey">
@@ -98,8 +98,8 @@
           <br><br>
       </div>
           <div class="row center">
-            <a href="#" id="download-button" class="btn waves-effect waves-light teal lighten-1">BUY NOW!</a>  
-            <a href="#" id="download-button" class="btn waves-effect waves-light teal lighten-1">REVIEWS</a>
+            <a href="#" id="download-button" class="btn info white-text small">BUY NOW!</a>  
+            <a href="#" id="download-button" class="btn info white-text small">REVIEWS</a>
           </div>
       </div>
   </div>

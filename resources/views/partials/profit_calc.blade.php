@@ -1,4 +1,4 @@
-<section class="" style="background:url('{{ asset('images/calculate-bg.jpg') }}') repeat fixed" data-type="background" data-speed="10">
+<section class="" style="background:url('{{ asset('images/bitcoin/prof_calc.png') }}') fixed" data-type="background" data-speed="10">
     <div class="row pad-top">
         <div class="col s12">
           <div class="row center pad-top">
@@ -9,7 +9,7 @@
     </div>
     <div class=" container">
       <div class="row">
-        <div class="col s12 l7 deep-purple darken-4 white-text containerx"  style="margin-bottom:0;min-height:480px">
+        <div class="col s12 l7 white-text containerx"  style="margin-bottom:0;max-height:480px;background-color:rgb(28, 51, 100);">
           <div class="row pad-top">
             <div class="containerx">
             <div class="col s5">
@@ -53,10 +53,11 @@
                     </div>
                 </div>
             </div>
-              <div class="row pad-top">
+            <br>
+              <div class="row">
                 <div class="containerx"></div>
                     <div class="col s12 center">
-                        <button class="btn white-text blue small waves-effect waves-ripple" id="profit_calc_btn">Calculate Now</button>
+                        <button class="btn-large info small white-text" id="profit_calc_btn">Calculate Now</button>
                     </div>
               </div>
             </div>

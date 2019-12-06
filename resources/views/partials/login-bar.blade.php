@@ -1,5 +1,5 @@
-<nav class="blue-grey darken-3">
-    <div class="blue-grey darken-4">
+<nav class="indigo darken-4">
+    <div class="">
         <ul class="containerx">
             @guest 
                 <li class="right"><a class="small white-text" href="{{ route('login') }}">{{ __('LOGIN') }}</a></li>

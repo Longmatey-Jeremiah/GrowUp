@@ -55,7 +55,7 @@
                               <label for="message">Message</label>
                             </div>
                           </div>
-                          <button class="btn-large blue waves-effect waves-light" type="submit" id="contact_btn">SUBMIT
+                          <button class="btn-large blueb waves-effect small waves-light" type="submit" id="contact_btn">SUBMIT
                             <i class="material-icons right">send</i>
                           </button>
                       </form>

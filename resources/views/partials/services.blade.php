@@ -40,7 +40,7 @@
             <p>Appropriately morph 24/7 initiatives with team driven partnerships evisc.</p>
           </div>
           <div class="col 12">
-            <a href="#" class="btn-large waves-effect blue lighten-1 white-text waves-ripple head">GET IN TOUCH</a>
+            <a href="#" class="btn-large blueb small">GET IN TOUCH</a>
           </div>
         </div>
         </div>

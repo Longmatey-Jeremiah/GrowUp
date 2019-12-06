@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 @include('partials.navbar')
-<section class="parallax-container" style="background:url({{ asset('images/lawyer-bg.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
+<section class="vh" style="background:url({{ asset('images/bitcoin/profit_calc.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
     <div class="valign-wrapper container" style="padding:12% 0;">
         <div class="row">
         <div class="col center s12 white-text">
@@ -11,7 +11,7 @@
             <h2 class="header center white-text text-lighten-1">EVERY CLIENT MATTERS</h2>
         </div>
         <div class="row center">
-            <a href="#" id="download-button" class="btn-large white-text waves-effect waves-ripple orange small lighten-3">MAKE AN APPOINTMENT</a>
+            <a href="#" id="download-button" class="btn-large white-text waves-effect waves-light warning small lighten-5">MAKE AN APPOINTMENT</a>
         </div>
     </div>
 </div>
@@ -72,7 +72,7 @@
                 </p>
             </div>
             <div class="row center">
-                <a href="#" id="download-button" class="btn-large white-text waves-effect waves-light orange small lighten-3">LEARN MORE</a>
+                <a href="#" id="download-button" class="btn-large waves-effect waves-light warning small lighten-5">LEARN MORE</a>
             </div>
         </div>
     </div>
@@ -161,7 +161,7 @@
                 </p>
             </div>
             <div class="row center">
-                <a href="#" id="download-button" class="btn-large white-text waves-effect waves-light orange small lighten-2">CALL BACK</a>
+                <a href="#" id="download-button" class="btn-large warning waves-effect waves-light small lighten-2">CALL BACK</a>
             </div>
         </div>
     </div>

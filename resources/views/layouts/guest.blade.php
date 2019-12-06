@@ -33,23 +33,23 @@
         <div class="containerx">
             <div class="nav-wrapper">
                 <a href="/" class="left brand-logo"><img src="{{ asset('images/logo-2.png')}}" alt="logo"></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons blue-text">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li>
                         <!--class="dropdown-trigger" data-target="dropdown1"--> 
-                        <a href="#" class="dropdown-trigger blue-text" data-target="dropdown1">HOME PAGE<i class="material-icons right">arrow_drop_down</i></a>
+                        <a href="#" class="dropdown-trigger blue-text small" data-target="dropdown1">HOME PAGE<i class="material-icons right">arrow_drop_down</i></a>
                     </li>
                     <li>
-                        <a class="@yield('nav-link-color')" href="{{ route('page') }}">PAGE</a>
+                        <a class="@yield('nav-link-color') small blue-text" href="{{ route('page') }}">PAGE</a>
                     </li>
                     <li>
-                    <a class="@yield('nav-link-color')" href="{{ route('team') }}">TEAM</a>
+                    <a class="@yield('nav-link-color') small blue-text" href="{{ route('team') }}">TEAM</a>
                     </li>
                     <li>
-                        <a class="@yield('nav-link-color')" href="{{ route('portfolio') }}">PORTFOLIO</a>
+                        <a class="@yield('nav-link-color') small blue-text" href="{{ route('portfolio') }}">PORTFOLIO</a>
                     </li>
                     <li>
-                        <a class="@yield('nav-link-color')" href="{{ route('blog') }}">BLOG</a>
+                        <a class="@yield('nav-link-color') small blue-text" href="{{ route('blog') }}">BLOG</a>
                     </li>
                 </ul>
     
@@ -73,14 +73,12 @@
         <li><a href="{{ route('lawyer') }}">PRIVATE LAWYER</a></li>
     </ul>
 </header>
-<section style="background:url({{ asset('images/breadcrumbs-bg.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
-    <div class="section reviews">
+<section class="vh20" style="background:url({{ asset('images/breadcrumbs-bg.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
+    <div class="section review">
         <div class="row containerx center">
-            <h6 class="white-text">Subtitle Page</h6>
-            <h5 class="white-text">@yield('route-name')</h5>
-            <i>
-                <a href="/">Home</a> <span class="white-text"> > @yield('route-name')</span>
-            </i>
+            <h6 class="white-text para center">Subtitle Page</h6>
+            <h5 class="white-text header center">@yield('route-name')</h5>
+            <i><a href="/" class="small light-blue-text center">Home</a></i> <span class="white-text small"> > @yield('route-name')</span>
 
         </div>
     </div>

@@ -10,32 +10,79 @@
 @section('route-color','white-text')
 @section('content')
 
-<div class="containerx section pad-top">
-    <div class="row pad-top">
-       <div class="col s12">
-
-           <h5 class="header indigo-text text-darken-4">
-               PEOPLE WHO ALREADY
-            </h5>
-        </div>
-<div class="col s12">
+<section>
+<div class="section" style="padding:10% 0">
     <div class="row">
-
-        <div class="col s12">
-            <p class="blue-grey-text">This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent.</p>
+  <div class="row containerx" style="padding:10px 0">
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/1-1.jpg') }}" >
         </div>
-        <div class="col s12">
-            <p class="blue-grey-text">This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent.</p>
         </div>
-        <div class="col s12">
-            <p class="blue-grey-text">This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent.</p>
+        <div class="card-panel"><p class="med">Customer relationship</p></div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/2-1.jpg') }}" >
         </div>
+        </div>
+        <div class="card-panel"><p class="med">Taxation in Ghana</p></div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/3-1.jpg') }}">
+        </div>
+        </div>
+        <div class="card-panel"><p class="med">Corporate tax policy</p></div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/4-1.jpg') }}" >
+        </div>
+        </div>
+        <div class="card-panel"><p class="med">Income tax planning</p></div>
+    </div>
     </div>
 </div>
-    
-
-    
-
+ <div class="row containerx">
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/1-1.jpg') }}" >
+        </div>
+        </div>
+        <div class="card-panel"><p class="med">Customer relationship</p></div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/2-1.jpg') }}" >
+        </div>
+        </div>
+        <div class="card-panel"><p class="med">Taxation in Ghana</p></div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/3-1.jpg') }}">
+        </div>
+        </div>
+        <div class="card-panel"><p class="med">Corporate tax policy</p></div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+        <div class="card-image">
+            <img src="{{ asset('images/4-1.jpg') }}" >
+        </div>
+        </div>
+        <div class="card-panel"><p class="med">Income tax planning</p></div>
+    </div>
     </div>
 </div>
+</div>
+</section>
 @endsection

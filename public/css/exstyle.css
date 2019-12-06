@@ -15,6 +15,9 @@
   font-weight: 600;
   color: white;
 }
+.large{
+  color: rgb(28, 51, 100);
+}
  .med{
    font-size: large;
    font-weight: 500;
@@ -46,26 +49,79 @@
    min-height: 600px !important;
    height: auto !important;
  }
+
+ .review{padding:10vh 0;}
  .containerx{
      width:90%;
      margin: 0 auto;
  }
-   .parallax-container .section {
-     width: 100%;
-   }
- 
- @media only screen and (max-width : 992px) {
-    .parallax-container {
-        min-height: 700px !important;
-        height: auto !important;
-      }
-    .parallax-container .section {
-     position: absolute;
-   }
-   #index-banner .section {
-     top: 10%;
-   }
- }
+
+ .dropdown-trigger {
+  cursor: pointer;
+  position: relative;
+  display:inline-block;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+ .dropdown-content li {
+  clear: both;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  min-height: 41px;
+  line-height: 1.3rem;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content li:hover,
+.dropdown-content li.active {
+  background-color:rgb(36, 150, 221);
+}
+
+.dropdown-trigger:hover div.dropdown-content {display: block;}
+
+
+.dropdown-content li:hover a,
+.dropdown-content li.active a{
+  color: white;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+  font-size: medium;
+  font-weight: 700;
+  color: rgb(57, 134, 235);
+  display: block;
+  line-height: 20px;
+  padding: 10px 16px;
+}
+.parallax-container .section {
+  width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container {
+      min-height: 500px !important;
+      height: 100vh !important;
+    }
+  .parallax-container .section {
+    position: absolute;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
  
  @media only screen and (max-width : 600px) {
    #index-banner .section {
@@ -141,4 +197,152 @@ p{font-family: 'Raleway',sans-serif;font-weight: 400;}
 .log-nav{
   background-color:rgba(70, 90, 110, 1);
 }
-.btn,.btn-large{background-color:transparent;border-radius:2rem;border:1px solid white;}
+
+.btn,.btn-large,.btn-small{
+  border: 2px solid white;
+  border-radius:2rem;
+  background-color: transparent;
+  color:white;
+  padding-left:35px;
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.whiteb {
+  border-color: #e7e7e7;
+  color: white;
+}
+
+.whiteb:hover {
+  background: white;
+  color:navy;
+}
+
+.greenb {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+.greenb:hover {
+  background-color:white ;
+  color: #4CAF50;
+}
+
+/* Blue */
+.blueb {
+  background: #2196F3;
+  border-color: #2196F3;
+  color: white;
+}
+
+.blueb:hover {
+  background: white;
+  color: #2196F3;
+}
+
+/* Orange */
+.orangeb {
+  background: orange;
+  border-color: orange;
+  color: white;
+}
+
+.orangeb:hover {
+  background: white;
+  color: orange;
+}
+
+/* Red */
+.redb {
+  background: orangered;
+  border-color: orangered;
+  color: white;
+}
+
+.redb:hover {
+  background: white;
+  color: orangered;
+}
+
+.card-pan {
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  padding: 10px 25px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.card-pan
+ {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+ }
+
+ .card-pan:hover{
+   background-color: #2196F3;
+   color: white;
+ }
+
+ .card-pan:hover a{
+   color:white;
+ }
+
+ .card-image img:hover{
+   transform: scale(1.01);
+   transition: 1s;
+   transition-timing-function:ease-in-out;
+ }
+
+ .vh{
+   min-height:100vh;
+   height:auto;
+ }
+ .vh20 {
+   height:40vh;
+ }

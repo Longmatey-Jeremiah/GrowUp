@@ -4,7 +4,7 @@
   <div class="containerx">
     <div class="nav-wrapper">
       <a href="/" class="left brand-logo"><img src="{{ asset('images/logo-2.png')}}" alt="logo"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons blue-text">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li>
             <!--class="dropdown-trigger" data-target="dropdown1"--> 

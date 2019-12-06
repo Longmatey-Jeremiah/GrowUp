@@ -5,7 +5,7 @@
 <!--navbar section-->
 @include('partials.navbar')
 
-<section style="background:url({{ asset('images/background/broker-bg.jpg')}}) 50% 0 repeat fixed;" data-speed="10" data-type="background">
+<section class="vh" style="background:url({{ asset('images/background/broker-bg.jpg')}}) 50% 0 repeat fixed;" data-speed="10" data-type="background">
     <div class="valign-wrapper containerx">
         
         <div class="row pad-top">
@@ -29,10 +29,10 @@
                     </div>
                     <div class="col s12">
                         <div class="col s6">
-                            <a href="#" id="download-button" class="btn-large waves-effect waves-light lighten-3 small white-text">LEARN MORE</a>
+                            <a href="#" id="download-button" class="btn-large waves-effect waves-light info small white-text">LEARN MORE</a>
                         </div>
                         <div class="col s6">
-                            <a href="#" id="download-button" class="btn-large waves-effect waves-light small white-text">GET STARTED</a>
+                            <a href="#" id="download-button" class="btn-large waves-effect waves-light info small white-text">GET STARTED</a>
                         </div>
                     </div>
                 </div>       
@@ -65,7 +65,7 @@
                 </p>
             </div>
             <div class="col 12 center">
-                <a href="#" class="btn-large waves-effect blue-text waves-light small">GET IN TOUCH</a>
+                <a href="#" class="btn-large waves-effect info waves-light small">GET IN TOUCH</a>
             </div>
         </div>
     </div>
@@ -327,26 +327,26 @@
                     </div>
                 </div>
         </div>
-        <div class="row">
-            <div class="col s8">
-                <p class="header pink-text">SHORT <span class="black-text"> -10000EURUSD</span></p>
+            <div class="row">
+              <div class="col s8">
+                 <p class="header pink-text">SHORT <span class="black-text"> -10000EURUSD</span></p>
+              </div>
+              <div class="col s4">
+                 <p class="header pink-text">-$0.8 <span class="black-text">X</span></p>
+             </div>
             </div>
-            <div class="col s4">
-                <p class="header pink-text">-$0.8 <span class="black-text">X</span></p>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-        </div>
-    </div>
-</div>
-    </div>
+  </div>
 </div>
         </div>
       </div>
     </div>
     <br><br>
 </section>
-
+<br><br><br><br><br><br>
 <!--blog post section-->
 @include('partials.blog-post')
 
@@ -370,7 +370,7 @@
                     <p class="center para">Property Listing</p>
                     <p class="center para">Client Services</p>
                     <p class="center para">24x7 Support</p>
-                    <p class="center"><a href="#" class="btn-large grey-text text-lighten-2 small waves-effect waves-light">BUT NOW!</a></p>
+                    <p class="center"><a href="#" class="btn info small waves-effect waves-light">BUT NOW!</a></p>
                 </div>
             </div>
              <div class="col s12 m6 l3">
@@ -382,7 +382,7 @@
                     <p class="center para">Property Listing</p>
                     <p class="center para">Client Services</p>
                     <p class="center para">24x7 Support</p>
-                    <p class="center"><a href="#" class="btn-large white-text blue small waves-effect waves-light">BUT NOW!</a></p>
+                    <p class="center"><a href="#" class="btn blueb small waves-effect waves-light">BUT NOW!</a></p>
                 </div>
             </div>
              <div class="col s12 m6 l3">
@@ -394,7 +394,7 @@
                     <p class="center para">Property Listing</p>
                     <p class="center para">Client Services</p>
                     <p class="center para">24x7 Support</p>
-                    <p class="center"><a href="#" class="btn-large grey-text text-lighten-2 small waves-effect waves-light">BUT NOW!</a></p>
+                    <p class="center"><a href="#" class="btn info small waves-effect waves-light">BUT NOW!</a></p>
                 </div>
             </div>
              <div class="col s12 m6 l3">
@@ -406,7 +406,7 @@
                     <p class="center para">Property Listing</p>
                     <p class="center para">Client Services</p>
                     <p class="center para">24x7 Support</p>
-                    <p class="center"><a href="#" class="btn-large grey-text text-lighten-2 small waves-effect waves-light">BUT NOW!</a></p>
+                    <p class="center"><a href="#" class="btn info small waves-effect waves-light">BUT NOW!</a></p>
                 </div>
             </div>
         </div>

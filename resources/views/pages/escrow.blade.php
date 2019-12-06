@@ -5,7 +5,7 @@
 <!--navbar section-->
 @include('partials.navbar')
 
-<section class="parallax-container" style="background:url({{ asset('images/background/escrow-bg.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
+<section class="vh" style="background:url({{ asset('images/background/escrow-bg.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
     <div class="valign-wrapper containerx">
         <br><br><br>
         
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="col s12">
-                        <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-3">Get Started</a>
+                        <a href="#" id="download-button" class="btn-large waves-effect waves-light whiteb small">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             </div>
                         <div class="col s5">
                             <div class="input-field green">
-                                <select  class="center browser-default white-text green">
+                                <select  class="center browser-default greenb">
                                     <option value="1" class="para">USD</option>
                                     <option value="2" class="para">USD</option>
                                     <option value="3" class="para">USD</option>
@@ -84,8 +84,8 @@
                         <p class="col s9 med white-text">Standerd Fee</p>
                     </div>
                     <div class="col s12">
-                        <a href="#" class="btn-large small white-text blue waves-effect waves-ripple">GET STARTED NOW</a>
-                        <a href="#"><p class="white-text hovereable">Save my qoute for later</p></a>
+                        <a href="#" class="btn-large waves-effect waves-light small info white-text">GET STARTED NOW</a>
+                        <a href="#"><p class="grey-text text-lighten-1">Save my qoute for later</p></a>
                     </div>
                 </div>       
             </div>
@@ -96,8 +96,8 @@
 <div class="row pad-top">
     <div class="col s12 pad-top">
         <div class="row center pad-top">
-            <h6 class="small center indigo-text text-darken-3">Growth Rate</h6>
-            <h5 class="header col s12 indigo-text text-darken-3">PROFIT CALCULATOR</h5>
+            <h6 class="small center indigo-text text-darken-3">COMPLETED WORKS</h6>
+            <h5 class="header col s12 indigo-text text-darken-3">OUR CLIENTS</h5>
         </div>
     </div>
 </div>
@@ -134,7 +134,7 @@
     </div>
 </div>
 <div class="col 12 center">
-    <a href="#" class="btn-large waves-effect green lighten-1 white-text waves-ripple head">LEARN MORE</a>
+    <a href="#" class="btn-large waves-effect waves-light greenb small">LEARN MORE</a>
 </div>
 <br>
 <br>
@@ -161,7 +161,7 @@
                     The audit examinations serve to protect public funds,determine safety and soundness
                     of operations and determine compliance with escrow statutes and regulations.
                 </p>
-                <a href="#" class="btn-large green lighten-1 small white-text">LEARN MORE</a>
+                <a href="#" class="btn-large waves-effect waves-light greenb small">LEARN MORE</a>
             </div>
         </div>
     </div>
