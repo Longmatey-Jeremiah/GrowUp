@@ -33,7 +33,7 @@
         <div class="containerx">
             <div class="nav-wrapper">
                 <a href="/" class="left brand-logo"><img src="{{ asset('images/logo-2.png')}}" alt="logo"></a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons blue-text">menu</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons blue-text">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li>
                         <!--class="dropdown-trigger" data-target="dropdown1"--> 
@@ -56,22 +56,46 @@
         </div>
     </div>
     </nav>
-    
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Home Page</a></li>
-        <li><a href="{{ route('page') }}">Page</a></li>
-        <li><a href="{{ route('team') }}">Team</a></li>
-        <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-        <li><a href="{{ route('blog') }}">Blog</a></li>
-    </ul>
-    <ul class="dropdown-content" id="dropdown1">
-        <li><a href="/">MAIN FINANCE</a></li>
-        <li><a href="{{ route('chart') }}">MAIN CHART</a></li>
-        <li><a href="{{ route('escrow') }}">ESCROW</a></li>
-        <li><a href="{{ route('broker') }}">BROKER</a></li>
-        <li><a href="{{ route('law-firm') }}">LAW FIRM</a></li>
-        <li><a href="{{ route('lawyer') }}">PRIVATE LAWYER</a></li>
-    </ul>
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+        <div class="background">
+            <img src="{{asset('images/bitcoin/chart-bg.jpg')}}">
+        </div>
+        <a href="javasript:void(0)"><img class="circle" src=" {{asset('images/bitcoin/chart-bg.jpg')}}"></a>
+        <a href="javasript:void(0)"><span class="white-text name">John Doe</span></a>
+        <a href="javasript:void(0)"><span class="white-text email"></span></a>
+        </div>
+    </li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect waves-light">HOME PAGE</a>
+                <div class="collapsible-body">
+                <ul class="small">
+                    <li><a href="/">MAIN FINANCE</a></li>
+                    <li><a href="{{ route('chart') }}">MAIN CHART</a></li>
+                    <li><a href="{{ route('escrow') }}">ESCROW</a></li>
+                    <li><a href="{{ route('broker') }}">BROKER</a></li>
+                    <li><a href="{{ route('law-firm') }}">LAW FIRM</a></li>
+                    <li><a href="{{ route('lawyer') }}">PRIVATE LAWYER</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li><a href="{{ route('page') }}">PAGE</a></li>
+    <li><a href="{{ route('team') }}">TEAM</a></li>
+    <li><a href="{{ route('portfolio') }}">PORTFOLIO</a></li>
+    <li><a href="{{ route('blog') }}">BLOG</a></li>
+</ul>
+<ul class="dropdown-content" id="dropdown1">
+    <li><a href="/">MAIN FINANCE</a></li>
+    <li><a href="{{ route('chart') }}">MAIN CHART</a></li>
+    <li><a href="{{ route('escrow') }}">ESCROW</a></li>
+    <li><a href="{{ route('broker') }}">BROKER</a></li>
+    <li><a href="{{ route('law-firm') }}">LAW FIRM</a></li>
+    <li><a href="{{ route('lawyer') }}">PRIVATE LAWYER</a></li>
+</ul>
 </header>
 <section class="vh20" style="background:url({{ asset('images/breadcrumbs-bg.jpg')}}) 50% 0 repeat fixed" data-speed="10" data-type="background">
     <div class="section review">

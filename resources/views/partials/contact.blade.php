@@ -33,7 +33,7 @@
                           <div class="input-field col s6">
                             <i class="material-icons prefix blue-text text-darken-2">email</i>
                             <input id="email" type="email" class="validate" />
-                            <label for="email">Email Address</label>
+                            <label for="email">Email</label>
                           </div>
                         </div>
                         <div class="row">

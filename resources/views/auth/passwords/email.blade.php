@@ -1,47 +1,78 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Lora:400,400i,700,700i|Raleway|Roboto:300,400,500,700&display=swap" rel="stylesheet  media="screen,projection" type="text/css">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/exstyle.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="vh" style="background-color:whitesmoke">
+    <div class="row container">
+    <div class="col s12 m8 offset-m2 l6 offset-l3 container valign-wrapper"  style="padding:25vh 0 0 0">
+        <div class="col s12 container">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
                 </div>
+                @endif
+                
+        <form method="POST" action="{{ route('password.email') }}">
+                @csrf
+                
+                <div class="row">
+                    <div class="col s12">
+                        <h6 class="center head">{{ __('Reset Password') }}</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix blue-text text-darken-2">email</i>
+                        <input id="email" type="email"
+                        class="validate {{ $errors->has('email') ? ' is-invalid' : '' }}"
+                        value="{{ old('email') }}">
+                        <label for="email">{{ __('E-Mail') }}</label>
+                    </div>
+
+                    @if ($errors->has('email'))
+                        <span class="helper-text"
+                            data-error="{{ $errors->first('email') }}" data-success="">
+                        </span>    
+                    @endif
+                    </div>
+
+        <div class="row center">
+            <div class="col s12 center">
+                <br>
+                <button type="submit" class="btn blueb waves-effect para waves-light" id="reset_btn">
+                        {{ __('Send Password Reset Link') }}
+                    <i class="material-icons right tiny">send</i>
+                </button>
             </div>
         </div>
+        </form>
     </div>
+</div>    
 </div>
-@endsection
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,80 +1,113 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@section('content')
-    <div class="row ">
-                <img class="col l9 hide-on-med-and-down" src="{{ asset('images/background4.jpg') }}">    
-            <div class="col s12 m8 push-m2 l3" style="padding-top:40px;">
-              <div>
-                  <h4 class="center">
-                    Grow<span class="teal-text">Up</span></h4>
-                </div>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Lora:400,400i,700,700i|Raleway|Roboto:300,400,500,700&display=swap" rel="stylesheet  media="screen,projection" type="text/css">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/exstyle.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="vh" style="background-color:whitesmoke">
+    <div class="row container">
+    <div class="col s12 m8 offset-m2 l6 offset-l3 container valign-wrapper"  style="padding:20vh 0 0 0">
+        <div class="col s12 container">
+        <form method="POST" action="{{ route('login') }}">
+                @csrf
+                
                 <div class="row">
-                    <form method="POST" action="{{ route('login') }}">
-                            @csrf
-                            
-                            <div class="row">
-                                
-                                <div class="col s10 push-s1 teal-text">
-                                    <h6 class="center">Sign In here. </h6>
-                                </div>
+                    
+                    <div class="col s12">
+                        <h6 class="center head">SIGN IN </h6>
+                    </div>
 
-                            <div class="input-field col s10 push-s1">
-                                <input id="email" type="email"
-                                class="validate {{ $errors->has('email') ? ' is-invalid' : '' }}"
-                                value="{{ old('email') }}">
-                                <label for="email">Email</label>
-                            </div>
-        
-                            @if ($errors->has('email'))
-                                <span class="helper-text"
-                                    data-error="{{ $errors->first('email') }}" data-success="">
-                                </span>    
-                            @endif
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s10 push-s1">
-                                <input id="password" type="text" class="validate
-                                    {{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                value="{{ old('password') }}" name='password'>
-                                <label for="password">Password</label>
-                            </div>
-        
-                            @if ($errors->has('password'))
-                                <span class="helper-text"
-                                    data-error="{{ $errors->first('password') }}" data-success="">
-                                </span>    
-                            @endif
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col s6 push-s1 m6 offset-m2">
-                                <div class="form-check">
-                                    <p>
-                                            <label>
-                                              <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} />
-                                              <span>{{ __('Remember Me') }}</span>
-                                            </label>
-                                          </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row center">
-                            <div class="col s9 push-s2 l12">
-                                <button type="submit" class="btn-small col push-s1">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn-small col push-s1" style="margin-left:4px;" href="{{ route('password.request') }}">{{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix blue-text text-darken-2">email</i>
+                    <input id="email" type="email"
+                    class="validate {{ $errors->has('email') ? ' is-invalid' : '' }}"
+                    value="{{ old('email') }}">
+                    <label for="email">Email</label>
                 </div>
-            </div>    
+
+                @if ($errors->has('email'))
+                    <span class="helper-text"
+                        data-error="{{ $errors->first('email') }}" data-success="">
+                    </span>    
+                @endif
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix blue-text text-darken-2">lock</i>
+                    <input id="password" type="text" class="validate
+                        {{ $errors->has('password') ? ' is-invalid' : '' }}"
+                    value="{{ old('password') }}" name='password'>
+                    <label for="password">Password</label>
+                </div>
+
+                @if ($errors->has('password'))
+                    <span class="helper-text"
+                        data-error="{{ $errors->first('password') }}" data-success="">
+                    </span>    
+                @endif
+            </div>
+
+
+            <div class="row">
+                <div class="col s11 ">
+                    <div class="form-check">
+                        <p class="small">
+                        <label>
+                            <input type="checkbox" class="small" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} />
+                            <span class="small">{{ __('Remember Me') }}</span>
+                        </label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row center">
+            <div class="col s12 center">
+                <button type="submit" class="btn blueb waves-effect small waves-light" id="login_btn">
+                    {{ __('Login') }}
+                    <i class="material-icons right tiny">send</i>
+                </button>
+                <br>
+
+                @if (Route::has('password.request'))
+                <div class="row valign-wrapper pad-top">
+                    <div class="col s12">
+                        <a class="small" href="{{ route('password.request') }}">
+                            {{ __('Forgot Your Password?') }}
+                        </a> |     
+                        <a class="small" href="{{ route('register') }}">
+                            {{ __("Don't an have account yet?") }}
+                        </a>
+                    </div>
+                </div>
+                @endif
+            </div>
         </div>
-    
-@endsection
+        </form>
+    </div>
+</div>    
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

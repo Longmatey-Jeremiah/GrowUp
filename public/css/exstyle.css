@@ -121,12 +121,20 @@
   #index-banner .section {
     top: 10%;
   }
+
+  .sidenav {
+    width: 30vw;
+  }
 }
  
  @media only screen and (max-width : 600px) {
    #index-banner .section {
      top: 10%;
    }
+
+   .sidenav {
+    width: 200px;
+  }
  }
  
  .icon-block {
@@ -341,8 +349,9 @@ p{font-family: 'Raleway',sans-serif;font-weight: 400;}
 
  .vh{
    min-height:100vh;
-   height:auto;
+
  }
  .vh20 {
    height:40vh;
  }
+
